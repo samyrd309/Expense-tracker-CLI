@@ -1,47 +1,56 @@
-Build a simple expense tracker application to manage your finances. The application should allow users to add, delete, and view their expenses. The application should also provide a summary of the expenses.
+# Expense Tracker CLI
 
-Requirements
-Application should run from the command line and should have the following features:
+Una aplicación de línea de comandos para gestionar tus finanzas de manera sencilla. Permite agregar, eliminar, y ver tus gastos, además de proporcionar un resumen de los mismos.
 
-Users can add an expense with a description and amount.
-Users can update an expense.
-Users can delete an expense.
-Users can view all expenses.
-Users can view a summary of all expenses.
-Users can view a summary of expenses for a specific month (of current year).
-Here are some additional features that you can add to the application:
+## Requisitos
 
-Add expense categories and allow users to filter expenses by category.
-Allow users to set a budget for each month and show a warning when the user exceeds the budget.
-Allow users to export expenses to a CSV file.
-The list of commands and their expected output is shown below:
+La aplicación debe cumplir con las siguientes características:
 
-$ expense-tracker add --description "Lunch" --amount 20
-# Expense added successfully (ID: 1)
+- Los usuarios pueden **agregar un gasto** con una descripción y un monto.
+- Los usuarios pueden **actualizar un gasto** existente.
+- Los usuarios pueden **eliminar un gasto**.
+- Los usuarios pueden **ver todos los gastos** registrados.
+- Los usuarios pueden **ver un resumen de todos los gastos**.
+- Los usuarios pueden **ver un resumen de los gastos de un mes específico** (del año actual).
 
-$ expense-tracker add --description "Dinner" --amount 10
-# Expense added successfully (ID: 2)
+### Funcionalidades adicionales sugeridas:
 
-$ expense-tracker list
+- **Categorías de gastos**: Permitir a los usuarios filtrar gastos por categoría.
+- **Presupuesto mensual**: Permitir a los usuarios establecer un presupuesto mensual y mostrar una advertencia si se excede.
+- **Exportar a CSV**: Permitir a los usuarios exportar los gastos a un archivo CSV.
+
+---
+
+## Comandos y ejemplos
+
+### Agregar un gasto
+Agrega un nuevo gasto proporcionando una descripción y un monto:
+```bash
+python main.py add --description "Lunch" --amount 20
+# Expense added successfully (ID: 1) 
+```
+
+### Listar todos los gastos
+Muestra todos los gastos registrados:
+```bash
+python main.py list
 # ID  Date       Description  Amount
-# 1   2024-08-06  Lunch        $20
-# 2   2024-08-06  Dinner       $10
+# 1   2025-04-12  Lunch        $20
+# 2   2025-04-12  Dinner       $10
+```
 
-$ expense-tracker summary
+
+### Mostrar el resumen de gastos
+Muestra el total de todos los gastos registrados:
+```bash
+python main.py summary
 # Total expenses: $30
+```
 
-$ expense-tracker delete --id 2
+
+### Eliminar un gasto
+Elimina un gasto específico utilizando su ID:
+```bash
+python main.py delete --id 1
 # Expense deleted successfully
-
-$ expense-tracker summary
-# Total expenses: $20
-
-$ expense-tracker summary --month 8
-# Total expenses for August: $20
-Implementation
-You can implement the application using any programming language of your choice. Here are some suggestions:
-
-Use any programming language for any available module for parsing command arguments (e.g. python with the argparse, node.js with commander etc).
-Use a simple text file to store the expenses data. You can use JSON, CSV, or any other format to store the data.
-Add error handling to handle invalid inputs and edge cases (e.g. negative amounts, non-existent expense IDs, etc).
-Use functions to modularize the code and make it easier to test and maintain.
+```
