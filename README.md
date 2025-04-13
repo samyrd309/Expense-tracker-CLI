@@ -54,3 +54,43 @@ Elimina un gasto específico utilizando su ID:
 python main.py delete --id 1
 # Expense deleted successfully
 ```
+
+## Implementación
+
+Puedes implementar la aplicación utilizando cualquier lenguaje de programación. Aquí hay algunas sugerencias:
+
+1. Usa un módulo para analizar argumentos de línea de comandos (por ejemplo, `argparse` en Python o `commander` en Node.js).
+2. Usa un archivo de texto simple para almacenar los datos de los gastos. Puedes usar formatos como JSON, CSV u otros.
+3. Agrega manejo de errores para entradas inválidas y casos límite (por ejemplo, montos negativos, IDs de gastos inexistentes, etc.).
+4. Modulariza el código utilizando funciones para que sea más fácil de probar y mantener.
+
+---
+
+## Estructura del Proyecto
+
+Expense Tracker CLI/
+├── expenses.json       # Archivo JSON donde se almacenan los gastos.
+├── functions.py        # Funciones principales para manejar los gastos.
+├── main.py             # Archivo principal para ejecutar la aplicación.
+├── README.md           # Documentación del proyecto.
+
+---
+
+## URL del Proyecto
+
+Puedes encontrar el proyecto en el siguiente enlace:  
+[Expense Tracker CLI](https://github.com/samyrd309/Expense-tracker-CLI)
+
+---
+
+## Notas
+
+- Asegúrate de que el archivo `expenses.json` exista en el directorio raíz. Si no, se creará automáticamente.
+- Los IDs de los gastos son generados automáticamente y deben usarse para eliminar o actualizar gastos.
+
+---
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
