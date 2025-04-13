@@ -1,3 +1,4 @@
+https://roadmap.sh/projects/expense-tracker
 # Expense Tracker CLI
 
 Una aplicación de línea de comandos para gestionar tus finanzas de manera sencilla. Permite agregar, eliminar, y ver tus gastos, además de proporcionar un resumen de los mismos.
@@ -80,7 +81,6 @@ Expense Tracker CLI/
 
 Puedes encontrar el proyecto en el siguiente enlace:  
 [project URL](https://github.com/samyrd309/Expense-tracker-CLI)
-https://github.com/samyrd309/Expense-tracker-CLI
 
 ---
 
