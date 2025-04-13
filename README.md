@@ -79,7 +79,7 @@ Expense Tracker CLI/
 ## URL del Proyecto
 
 Puedes encontrar el proyecto en el siguiente enlace:  
-[Expense Tracker CLI](https://github.com/samyrd309/Expense-tracker-CLI)
+[ project URL](https://github.com/samyrd309/Expense-tracker-CLI)
 
 ---
 
